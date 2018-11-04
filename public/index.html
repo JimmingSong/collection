@@ -26,6 +26,24 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+    <!--<script>
+        var firefox = navigator.userAgent.indexOf('Firefox') !== -1;
+        function MouseWheel(e) {
+            ///对img按下鼠标滚路，阻止视窗滚动
+            e = e || window.event;
+            if (e.stopPropagation) e.stopPropagation();
+            else e.cancelBubble = true;
+            if (e.preventDefault) e.preventDefault();
+            else e.returnValue = false;
+            var isUp = (firefox && e.detail < 0) || (!firefox && e.wheelDelta>0);
+
+            var st = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+            document.body.scrollTop = document.documentElement.scrollTop = st + (isUp ? -1070 : 1070);//一次滚动10px
+        }
+        window.onload = function () {
+            firefox ? document.addEventListener('DOMMouseScroll', MouseWheel, false) : (document.onmousewheel = MouseWheel);
+        }
+    </script>-->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

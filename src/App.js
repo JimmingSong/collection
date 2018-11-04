@@ -4,23 +4,19 @@ import './App.css';
 // import Main from './pages/main'
 import List from './pages/com/list'
 // import MainRoute from './route'
-import {BrowserRouter, Route,Router} from 'react-router-dom'
-import Main from "./pages/main";
-import About from "./pages/head";
-import Rooroy from "./pages/rooroy";
+import Routers from './pages/route'
+import {BrowserRouter as Router, Route,Redirect} from 'react-router-dom'
 
 class App extends Component {
     render() {
     return (
       <div className="App">
-          <BrowserRouter>
+          <Router>
               <div>
                   <List />
-                  <Route path='/main' render={()=><Main/>}/>
-                  <Route path='/about' render={()=><About/>}/>
-                  <Route path='/rooroy' render={()=><Rooroy/>}/>
+                  <Routers/>
               </div>
-          </BrowserRouter>
+          </Router>
       </div>
     );
   }

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Head from './head'
 // import { BrowserRouter } from 'react-router-dom'
 
 class main extends Component {
