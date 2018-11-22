@@ -29,6 +29,12 @@ class index extends Component {
         }
     }
 
+    nextPage = () => {
+        this.props.history.push({
+            pathname:'part-list'
+        })
+    }
+
     render() {
         let {infor,contact,infoList,skill} = this.state;
         return (
@@ -79,8 +85,8 @@ class index extends Component {
                         {skill && skill.length && skill.map((item,index)=>(<span key={index}>{item}</span>))}
                     </div>
                 </div>
-                <div>
-                    <Icon type="right-circle" />
+                <div className='ab-next-box'>
+                    <Icon type="right-circle" onClick={this.nextPage} className='animated infinite bounce' />
                 </div>
             </div>
         )

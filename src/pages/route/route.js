@@ -3,6 +3,7 @@ import Rooroy from "../../pages/rooroy";
 import Good from "../../pages/good";
 import Akzen from "../../pages/akzen";
 import Home from '../../pages/home'
+import PartList from '../../pages/home/partList'
 
 export default [
     {path: '/home',component:Home},
@@ -10,4 +11,5 @@ export default [
     {path: '/part01',component:Rooroy},
     {path: '/part02',component:Good},
     {path: '/part03',component:Akzen},
+    {path: '/part-list',component:PartList},
 ];

@@ -51,7 +51,7 @@
   font-size: 18px;
   font-family: "Microsoft YaHei";
 }
-.about-box .ab-content .ab-info .info-box .info-con .divider {
+.about-box .ab-content .ab-info .info-box .divider {
   width: 2px;
   height: 18px;
   margin: 3px 0;
@@ -81,5 +81,11 @@
   color: #fff;
   border-radius: 100%;
   background: #A8AAA9;
+}
+.about-box .ab-next-box {
+  position: fixed;
+  right: 6%;
+  bottom: 10%;
+  font-size: 40px;
 }
 /*# sourceMappingURL=aboutMe.css.map */
