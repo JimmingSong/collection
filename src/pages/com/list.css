@@ -1,0 +1,26 @@
+.box-style{
+    position: fixed;
+    top: 30%;
+    transition: left 1000ms linear;
+}
+.lf--150px{
+    left: -150px;
+}
+
+.ul-style{
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    list-style: none;
+}
+
+.ul-style>li{
+    background: #ccc;
+    margin: 4px 0;
+    padding: 10px;
+}
+.icon-style{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+}
