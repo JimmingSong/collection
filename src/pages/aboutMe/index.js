@@ -79,6 +79,9 @@ class index extends Component {
                         {skill && skill.length && skill.map((item,index)=>(<span key={index}>{item}</span>))}
                     </div>
                 </div>
+                <div>
+                    <Icon type="right-circle" />
+                </div>
             </div>
         )
     }
