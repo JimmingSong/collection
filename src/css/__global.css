@@ -1,4 +1,33 @@
-.fl-row-center{
+
+.dis-flex{
     display: flex;
+}
+.js-center{
     justify-content: center;
+}
+
+.box-hidden{
+    overflow-y: hidden;
+}
+.box-scroll{
+    overflow-y: scroll;
+}
+
+/*height*/
+.h-100vh{
+    height: 100vh;
+}
+.h-90p{
+    height: 90%;
+}
+.h-80p{
+    height: 80%;
+}
+
+/*width*/
+.w-90p{
+    width: 90%;
+}
+.w-80p{
+    width: 80%;
 }

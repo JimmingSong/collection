@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-// import Main from './pages/main'
+import './css/index.css';
 import List from './pages/com/list'
-// import MainRoute from './route'
 import Routers from './pages/route'
-import {BrowserRouter as Router, Route,Redirect} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
 
 class App extends Component {
     render() {
@@ -14,7 +11,7 @@ class App extends Component {
           <Router>
               <div>
                   <List />
-                  <Routers/>
+                  <Routers />
               </div>
           </Router>
       </div>

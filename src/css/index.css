@@ -1,4 +1,5 @@
 @import '__global.css';
+@import "App.css";
 ul{
     list-style: none;
 }
@@ -31,34 +32,4 @@ ul{
     top: 50%;
     left: 200px;
     font-size: 24px;
-}
-img{
-    width:80%;
-    height: 80%;
-}
-.ant-carousel .slick-slide {
-    height: 100vh;
-    overflow: hidden;
-}
-
-.ant-carousel .slick-slide h3 {
-    color: #f00;
-}
-.next-pic{
-    position: fixed;
-    right: 10%;
-    bottom: 30%;
-    font-size: 2rem;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    background: #ebebeb;
-    border-radius: 5px;
-}
-.next-pic:hover{
-    background: rgba(147, 143, 143, 0.73);
-}
-.box-hidden{
-    height: 100vh;
-    overflow-y: hidden;
 }

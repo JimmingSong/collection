@@ -1,0 +1,85 @@
+.about-box {
+  font-size: 18px;
+}
+.about-box .ab-top {
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+}
+.about-box .ab-top .ab-top-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  font-size: 35px;
+  font-weight: 900;
+  color: #f6d96c;
+}
+.about-box .ab-top .ab-top-left div {
+  display: flex;
+  flex-direction: column;
+}
+.about-box .ab-top .ab-top-left div span {
+  line-height: 25px;
+}
+.about-box .ab-top .ab-top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #babcba;
+  width: 20%;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+}
+.about-box .ab-content {
+  width: 55%;
+  margin: 0 auto;
+}
+.about-box .ab-content .ab-info {
+  display: flex;
+}
+.about-box .ab-content .ab-info .info-box {
+  width: 35%;
+}
+.about-box .ab-content .ab-info .info-box .info-con {
+  color: #000;
+  font-weight: 900;
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+}
+.about-box .ab-content .ab-info .info-box .info-con .divider {
+  width: 2px;
+  height: 18px;
+  margin: 3px 0;
+  background: #868484;
+}
+.about-box .ab-content .info-list {
+  margin-top: 10%;
+  font-size: 16px;
+}
+.about-box .ab-content .info-list ul {
+  list-style: disc inside;
+}
+.about-box .ab-content .info-list ul li {
+  margin: 5px 0;
+}
+.about-box .ab-content .ab-sill {
+  margin-top: 160px;
+}
+.about-box .ab-content .ab-sill span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 100%;
+  background: #A8AAA9;
+}
+/*# sourceMappingURL=aboutMe.css.map */

@@ -2,10 +2,12 @@ import About from "../../pages/aboutMe";
 import Rooroy from "../../pages/rooroy";
 import Good from "../../pages/good";
 import Akzen from "../../pages/akzen";
+import Home from '../../pages/home'
 
 export default [
-    {name: 'About Me', path: '/',component:About},
-    {name: 'Part.01', path: '/part01',component:Rooroy},
-    {name: 'Part.02', path: '/part02',component:Good},
-    {name: 'Part.03', path: '/part03',component:Akzen}
+    {path: '/home',component:Home},
+    {path: '/aboutMe',component:About},
+    {path: '/part01',component:Rooroy},
+    {path: '/part02',component:Good},
+    {path: '/part03',component:Akzen},
 ];

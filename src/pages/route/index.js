@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Routers from './route'
-import {Route} from 'react-router-dom'
+import {Switch, Route, Redirect} from 'react-router-dom'
 
 class App extends Component {
     constructor(props) {
@@ -9,12 +9,13 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <Switch>
+                <Redirect exact to='/home' from='/' />
                 {Routers.map((route,index)=><Route key={index} path={route.path} render={(props)=>{
                     console.log(props);
                     return <route.component {...props}/>;
-                }}/>)}
-            </div>
+                }} />)}
+            </Switch>
         )
     }
 }
