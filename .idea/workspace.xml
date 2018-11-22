@@ -1,51 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf191a94-483b-4e02-8808-d230b3b29b24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/css/head.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/com/list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/head.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/head/作品集 2.003.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.003.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.004.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.005.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.006.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.007.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.008.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.009.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.010.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.011.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.012.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.013.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.014.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.015.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.016.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.017.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.018.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.019.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.020.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.021.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.022.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.023.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.024.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.025.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.026.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.027.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.028.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.029.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.030.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.031.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.032.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.033.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.034.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.035.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.036.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/image/rooroy/作品集 2.037.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/rooroy.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="cf191a94-483b-4e02-8808-d230b3b29b24" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -320,12 +276,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="image" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="collection" type="b2602c69:ProjectViewProjectNode" />
-              <item name="collection" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -427,7 +377,7 @@
       <workItem from="1541344314482" duration="1586000" />
       <workItem from="1542763392442" duration="1719000" />
       <workItem from="1542867972400" duration="11424000" />
-      <workItem from="1542887694611" duration="924000" />
+      <workItem from="1542887694611" duration="1547000" />
     </task>
     <task id="LOCAL-00001" summary="get">
       <created>1541345549948</created>
@@ -447,10 +397,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47325000" />
+    <option name="totallyTimeSpent" value="47948000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Project Explorer" />
       <window_info id="Job Explorer" />
