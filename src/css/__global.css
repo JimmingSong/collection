@@ -17,6 +17,9 @@
 .h-100vh{
     height: 100vh;
 }
+.h-5px{
+    height: 5px;
+}
 .h-90p{
     height: 90%;
 }
@@ -30,4 +33,14 @@
 }
 .w-80p{
     width: 80%;
+}
+
+/*margin*/
+.mg-center{
+    margin: 0 auto;
+}
+
+/*padding*/
+.pd-5-0px{
+    padding: 5px  0;
 }
