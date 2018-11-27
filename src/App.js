@@ -3,7 +3,8 @@ import './css/index.css';
 import 'animate.css'
 import List from './pages/com/list'
 import Routers from './pages/route'
-import {BrowserRouter as Router} from 'react-router-dom'
+// import {BrowserRouter as Router} from 'react-router-dom'
+import {Router} from 'mirrorx'
 
 class App extends Component {
     render() {

@@ -1,8 +1,29 @@
 import React, {Component} from 'react';
 import {Icon, Divider} from 'antd'
-import axios from 'axios'
+// import axios from 'axios'
+// import {connect} from 'react-redux'
+// import {setName} from "../store/actions";
+import mirror,{ actions, connect} from 'mirrorx'
 import '../../css/aboutMe.css'
 
+mirror.model({
+    name: 'info',
+    initialState: {name:'罗英'},
+    reducers: {
+        getName(state) { return state},
+        updateName(state,data){
+            return Object.assign({},state,{name:data})
+        }
+    },
+    effects: {
+        getInfoName() {
+            actions.app.getName()
+        },
+        modifyName(data){
+            actions.info.updateName(data)
+        }
+    }
+})
 class index extends Component {
     constructor(props) {
         super(props);
@@ -30,9 +51,14 @@ class index extends Component {
     }
 
     nextPage = () => {
-        this.props.history.push({
-            pathname: 'part-list'
-        })
+        // this.props.history.push({
+        //     pathname: 'part-list'
+        // });
+        actions.info.modifyName('JimmySong');
+        console.log(actions.info);
+        console.log(this.props);
+        // this.props.setName('宋计民');
+        // console.log(this.props.store.getState());
     }
 
     render() {
@@ -54,7 +80,7 @@ class index extends Component {
                     <div className='ab-info'>
                         <div className='info-box'>
                             <div className='info-con'>information</div>
-                            <div className='info-con'>{infor.name}</div>
+                            <div className='info-con'>{this.props.info.name}</div>
                             <Divider type='vertical' className='divider'/>
                             <div>
                                 <span>{infor.gender} </span>
@@ -93,5 +119,19 @@ class index extends Component {
         )
     }
 }
+// const mapStateToProps = (state) => {
+//     return {
+//         getName:state.DealName,
+//     }
+// }
+//
+// const mapDispatchToProps = (dispatch,ownProps)=>{
+//     return {
+//         setName(data){
+//             dispatch(setName(data))
+//         }
+//     }
+// }
 
-export default index;
+// export default connect(mapStateToProps,mapDispatchToProps)(index);
+export default connect(state =>(state))(index)

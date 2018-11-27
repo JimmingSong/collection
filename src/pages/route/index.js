@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import Routers from './route'
-import {Switch, Route, Redirect} from 'react-router-dom'
+// import {Switch, Redirect} from 'react-router-dom'
+import {Route,Switch,Redirect,withRouter} from 'mirrorx'
+import store from '../store'
 
 class App extends Component {
     constructor(props) {
         super(props);
     }
-
     render() {
         return (
             <Switch>
