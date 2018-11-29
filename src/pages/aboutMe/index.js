@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Icon, Divider} from 'antd'
+import T from '../request'
 // import axios from 'axios'
 // import {connect} from 'react-redux'
 // import {setName} from "../store/actions";
@@ -10,14 +11,23 @@ mirror.model({
     name: 'info',
     initialState: {name:'罗英'},
     reducers: {
-        getName(state) { return state},
+        setInfo(state,data) {
+            return Object.assign({},state,{info:data})
+        },
         updateName(state,data){
             return Object.assign({},state,{name:data})
         }
     },
     effects: {
-        getInfoName() {
-            actions.app.getName()
+         getInfoName() {
+            T.getUserInfo().then(data => {
+                if (data) {
+                    actions.info.setInfo(data[0]);
+                }else{
+                    console.log(data);
+                }
+            });
+            // actions.app.getName()
         },
         modifyName(data){
             actions.info.updateName(data)
@@ -50,19 +60,19 @@ class index extends Component {
         }
     }
 
+    componentDidMount(){
+        actions.info.getInfoName()
+    }
+
     nextPage = () => {
-        // this.props.history.push({
-        //     pathname: 'part-list'
-        // });
-        actions.info.modifyName('JimmySong');
-        console.log(actions.info);
-        console.log(this.props);
-        // this.props.setName('宋计民');
-        // console.log(this.props.store.getState());
+        this.props.history.push({
+            pathname: 'part-list'
+        });
     }
 
     render() {
-        let {infor, contact, infoList, skill} = this.state;
+        // let {infor, contact, infoList, skill} = this.state;
+        let {info} = this.props.info;
         return (
             <div className='about-box'>
                 <div className='ab-top'>
@@ -76,17 +86,17 @@ class index extends Component {
                         <span>2016-2018</span>
                     </div>
                 </div>
-                <div className='ab-content'>
+                {info && <div className='ab-content'>
                     <div className='ab-info'>
                         <div className='info-box'>
                             <div className='info-con'>information</div>
-                            <div className='info-con'>{this.props.info.name}</div>
+                            <div className='info-con'>{info.name}</div>
                             <Divider type='vertical' className='divider'/>
                             <div>
-                                <span>{infor.gender} </span>
-                                <span> {infor.age}岁</span>
+                                <span>{info.gender} </span>
+                                <span> {info.age}岁</span>
                             </div>
-                            <div>{infor.province}</div>
+                            <div>{info.province}</div>
                         </div>
                         <div className='info-box'>
                             <div className='info-con'>information</div>
@@ -94,24 +104,24 @@ class index extends Component {
                             <Divider type='vertical' className='divider'/>
                             <div>
                                 <span>Tel:</span>
-                                <span> {contact.tel}</span>
+                                <span> {info.tel}</span>
                             </div>
                             <div>
                                 <span>Email:</span>
-                                <span> {contact.email}</span>
+                                <span> {info.email}</span>
                             </div>
                         </div>
                     </div>
                     <div className='info-list'>
                         <ul>
-                            {infoList && infoList.length && infoList.map((item, index) => (
-                                <li key={index}>{item.txt}</li>))}
+                            {info.infoList.map((item, index) => (
+                                <li key={index}>{item}</li>))}
                         </ul>
                     </div>
                     <div className='ab-sill'>
-                        {skill && skill.length && skill.map((item, index) => (<span key={index}>{item}</span>))}
+                        {info.skill.map((item, index) => (<span key={index}>{item}</span>))}
                     </div>
-                </div>
+                </div>}
                 <div className='ab-next-box'>
                     <Icon type="right-circle" onClick={this.nextPage} className='animated infinite bounce'/>
                 </div>

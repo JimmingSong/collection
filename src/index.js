@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import './css/index.css'
 import 'antd/dist/antd.css'
 import {render} from 'mirrorx'
+//mirrorx  要用mirrorx封装的render方法渲染
 render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
