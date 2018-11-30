@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf191a94-483b-4e02-8808-d230b3b29b24" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/aboutMe.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/aboutMe.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/aboutMe.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/aboutMe.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/aboutMe.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/aboutMe.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/aboutMe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/aboutMe/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/store/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="cf191a94-483b-4e02-8808-d230b3b29b24" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -23,7 +15,7 @@
     <session id="-1438405704">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.11" value="1" />
@@ -155,8 +147,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/request/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+            <state relative-caret-position="367">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -347,7 +339,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../collectionServer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -398,6 +390,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="eject" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="eject" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -411,9 +413,11 @@
     <list>
       <item itemvalue="npm.start" />
       <item itemvalue="npm.build" />
+      <item itemvalue="npm.eject" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.eject" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
@@ -448,7 +452,7 @@
       <workItem from="1543283530883" duration="13554000" />
       <workItem from="1543366023459" duration="4892000" />
       <workItem from="1543394290122" duration="2359000" />
-      <workItem from="1543453458032" duration="16410000" />
+      <workItem from="1543453458032" duration="16506000" />
     </task>
     <task id="LOCAL-00001" summary="get">
       <created>1541345549948</created>
@@ -492,14 +496,28 @@
       <option name="project" value="LOCAL" />
       <updated>1543314355791</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="融入mirrorx">
+      <created>1543486782423</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543486782423</updated>
+    </task>
+    <task id="LOCAL-00008" summary="融入mirrorx">
+      <created>1543486822783</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543486822783</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118441000" />
+    <option name="totallyTimeSpent" value="118537000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47807637" visible="true" weight="0.17492098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -509,7 +527,7 @@
       <window_info id="Job Explorer" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32949087" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23235613" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23235613" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -762,8 +780,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/request/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        <state relative-caret-position="367">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
