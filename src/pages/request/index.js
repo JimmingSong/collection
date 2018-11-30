@@ -15,7 +15,7 @@ axios.defaults.headers = {
     // "Access-Control-Allow-Methods":"GET,POST"
     // 'X-Requested-With': 'XMLHttpRequest',
 }
-// axios.defaults.baseURL = 'http://120.78.201.156';
+axios.defaults.baseURL = 'http://120.78.201.156';
 // axios.defaults.withCredentials = true;
 
 

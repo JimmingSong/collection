@@ -27,6 +27,25 @@ class PartList extends Component {
         }
     };
 
+    toPage1 = (index) => {
+        console.log(index);
+        let path;
+        switch (index) {
+            case 1:
+                path = '/part02';
+                break;
+            case 2:
+                path = '/part03';
+                break;
+            default:
+                path = '/part01';
+                break;
+        }
+        this.props.history.push({
+            pathname: path
+        })
+    };
+
     render() {
         const {partData} = this.state;
         return (
@@ -36,9 +55,8 @@ class PartList extends Component {
                         <h1>CONTENT</h1>
                     </div>
                     <div>
-                        {partData && partData.length && partData.map((item, index) => <div key={index}
-                                                                                           className='part-box'>
-                            <h3><span>{item.title}</span><Icon type="plus"/></h3>
+                        {partData && partData.length && partData.map((item, index) => <div key={index} className='part-box'>
+                            <h3 onClick={()=>{this.toPage1(index)}}><span>{item.title}</span><Icon type="plus"/></h3>
                             <Divider className='part-small-divider'/>
                             <Divider className='part-divider h-5px'/>
                             <h2 className='part-project'>{item.project}</h2>

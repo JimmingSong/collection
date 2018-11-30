@@ -4,6 +4,7 @@ import Good from "../../pages/good";
 import Akzen from "../../pages/akzen";
 import Home from '../../pages/home'
 import PartList from '../../pages/home/partList'
+import Login from '../../pages/login'
 
 export default [
     {path: '/home',component:Home},
@@ -12,4 +13,5 @@ export default [
     {path: '/part02',component:Good},
     {path: '/part03',component:Akzen},
     {path: '/part-list',component:PartList},
+    {path: '/login',component:Login}
 ];

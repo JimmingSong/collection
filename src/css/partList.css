@@ -43,6 +43,7 @@
   margin: 15px 0;
 }
 .part-list-box > div:last-child {
+  height: 90%;
   flex-grow: 1;
   background: url("../image/head/img2.003.jpeg") 94% 50% no-repeat;
 }
