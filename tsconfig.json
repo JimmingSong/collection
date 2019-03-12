@@ -1,0 +1,13 @@
+{
+  "apps":[{
+    "name":"collectionWeb",
+    "script":"scripts/start.js",
+    "log_data_format":"YYYY-MM-DD HH:mm:SS",
+    "log_file":"logs/collection-web.log",
+    "error_file":"logs/collection-web-err.log",
+    "out_file":"logs/collection-web-out.log",
+    "pid_file":"logs/collection-web.pid",
+    "exec_node":"cluster_mode",
+    "watch":true
+  }]
+}

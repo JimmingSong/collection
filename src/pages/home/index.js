@@ -80,8 +80,8 @@ class Index extends Component {
         return (
             <div className='dis-flex js-around index-box'>
                 {
-                    showImgList.map((item,index) => <div className='img-box dis-flex js-around' >
-                        {item.map((num,dex) => <img className='w-400p img h-225p' onClick={(e) => {this.clickShowMask(num)}} src={require(`../../image/self/作品集 2.0${num}.jpeg`)} alt="图片加载失败"/>)}
+                    showImgList.map((item,index) => <div key={index} className='img-box dis-flex js-around' >
+                        {item.map((num,dex) => <img key={dex} className='w-400p img h-225p' onClick={(e) => {this.clickShowMask(num)}} src={require(`../../image/self/作品集 2.0${num}.jpeg`)} alt="图片加载失败"/>)}
                     </div>)
                 }
                 {showMask && <Modal

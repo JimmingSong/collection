@@ -88,4 +88,7 @@
   bottom: 10%;
   font-size: 40px;
 }
+.about-box .ab-next-box > .animated:hover {
+  animation-play-state: paused;
+}
 /*# sourceMappingURL=aboutMe.css.map */
