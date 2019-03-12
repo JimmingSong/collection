@@ -11,10 +11,7 @@ class App extends Component {
         return (
             <Switch>
                 <Redirect exact to='/home' from='/' />
-                {Routers.map((route,index)=><Route key={index} path={route.path} render={(props)=>{
-                    console.log(props);
-                    return <route.component {...props}/>;
-                }} />)}
+                {Routers.map((route,index)=><Route key={index} path={route.path} render={(props)=> <route.component {...props}/>} />)}
             </Switch>
         )
     }

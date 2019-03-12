@@ -6,6 +6,14 @@
     justify-content: center;
 }
 
+.js-around {
+    justify-content: space-around;
+}
+
+.js-ai-center{
+    align-items: center;
+}
+
 .box-hidden{
     overflow-y: hidden;
 }
@@ -23,6 +31,9 @@
 .h-80p{
     height: 80%;
 }
+.h-225p {
+    height: 225px;
+}
 
 /*width*/
 .w-90p{
@@ -30,4 +41,35 @@
 }
 .w-80p{
     width: 80%;
+}
+.w-400p {
+    width: 400px;
+}
+.w-100per{
+    width: 100%;
+}
+
+
+.img-box{
+    width: 90%;
+    padding: 30px;
+}
+.img {
+    box-shadow: 2px 4px 10px 2px #ccc;
+}
+.index-box{
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+.mask-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+.carousel{
+    width: 1200px;
 }
