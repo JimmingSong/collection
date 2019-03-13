@@ -13,7 +13,7 @@ class index extends Component {
         return (
             <div>
                 <div>
-                    {imgList && imgList.map((item,index) => <img key={index} src={require(`../../image/rooroy/作品集 2.0${item}.jpeg`)} alt=''/>)}
+                    {imgList && imgList.map((item,index) => <img style={{width:'300px'}} key={index} src={require(`../../image/rooroy/作品集 2.0${item}.jpeg`)} alt=''/>)}
                 </div>
                 {/*<img src={require('../../image/rooroy/作品集 2.005.jpeg')} alt=''/>*/}
             </div>
