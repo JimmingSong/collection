@@ -53,10 +53,7 @@
 }
 
 
-.img-box{
-    width: 90%;
-    padding: 30px;
-}
+
 .img {
     box-shadow: 2px 4px 10px 2px #ccc;
 }
@@ -76,6 +73,15 @@
 .carousel{
     width: 1200px;
 }
-@media screen and (max-width: 768px ) {
 
+@media screen and (min-width: 768px) {
+    .img-box{
+        width: 90%;
+        padding: 30px 0;
+    }
+}
+@media screen and (max-width: 767px){
+    .img-box>div{
+        margin: 10px;
+    }
 }

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Carousel, Modal, Icon} from 'antd'
+import {Carousel, Modal, Icon, Row, Col} from 'antd'
 
 class Index extends Component {
     constructor(props) {
@@ -39,7 +39,10 @@ class Index extends Component {
         },1000)
     }
     clickShowMask = (num) => {
-        console.log(num);
+        let width = document.querySelector('html').offsetWidth;
+        if (width < 768) {
+            return;
+        }
         this.setState({
             showMask: true,
             firstImg: num - 1
@@ -68,9 +71,11 @@ class Index extends Component {
         return (
             <div className='dis-flex js-around index-box'>
                 {
-                    showImgList.map((item,index) => <div key={index} className='img-box dis-flex js-around' >
-                        {item.map((num,dex) => <img key={dex} className='w-400p img h-225p' onClick={(e) => {this.clickShowMask(num)}} src={require(`../../image/self/作品集 3.0${num}.jpeg`)} alt="图片加载失败"/>)}
-                    </div>)
+                    showImgList.map((item,index) => <Row key={index} type='flex' justify='around' className='img-box' >
+                        {item.map((num,dex) => <Col md={{span: 24}} lg={{span: 5, push: dex}}>
+                            <img key={dex} className='w-100per img h-225p' onClick={(e) => {this.clickShowMask(num)}} src={require(`../../image/self/作品集 3.0${num}.jpeg`)} alt="图片加载失败"/>
+                        </Col> )}
+                    </Row>)
                 }
                 {showMask && <Modal
                     title="作品展示"
